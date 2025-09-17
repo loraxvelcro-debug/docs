@@ -55,7 +55,7 @@ const getProjectMetadata = async (projectId) => {
     // IF IN NODE.JS, you should use https://api.scratch.mit.edu/projects/${projectId} directly instead.
     const response = await fetch(`https://trampoline.turbowarp.org/api/projects/${projectId}`);
     if (response.status === 404) {
-        throw new Error('The project is unshared or does not exist');
+        throw new Error('The project is unshared or does not exist stupid');
     }
     if (!response.ok) {
         throw new Error(`HTTP error ${response.status} fetching project metadata`);
